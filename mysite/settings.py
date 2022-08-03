@@ -84,8 +84,8 @@ DATABASES = {
         },
         'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': 'rapvida09',
-        'HOST': 'localhost',
+        'PASSWORD': '1225k',
+        'HOST': '192.168.1.12',
         'PORT': '5432',
     }
 }

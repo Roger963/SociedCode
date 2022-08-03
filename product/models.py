@@ -16,6 +16,9 @@ class Product(models.Model):
     nombre = models.CharField(max_length=255, blank=True)
     description = models.TextField(max_length=255, blank=True)
     precio = models.IntegerField()
+    def __str__(self):
+        return self.nombre
+
 
 
 
