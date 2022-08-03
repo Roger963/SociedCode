@@ -10,35 +10,60 @@
 </head>
 <body>
  
-    <form action="" method="post">
-        <fieldset>
-            <legend>Ingrese Pedido</legend>
-            <div class="section1">
-                <label for="compra">Orden de compra1</label>
-                <input type="text">
-            </div>
-            <div class="section2">
-                <p>Documentos XML o ZIP</p>
-                <input type="text">
-                {% if text %}             
-                <span> sin archivos selecionados</span>
-                {% endif %}
-                <span> archivo subido </span>
-            </div>
-            <div class="section3">
-                <label for="nofact">No.Factura</label>
-                <input type="text">
-                <label for="monto">Monto:</label>
-                <input type="text">
-                <label for="datefact">Fecha factura</label>
-            </div>
-            <div class="section4">
-                <input type="submit">
-                <input type="submit">
-            </div>
-        </fieldset>
-    </form>
+    <body>
+        <form action="" method="post">
+            <fieldset class="informacion">
+            
+                <legend>Ingrese Pedido</legend>
+                <div class="section1">
+                    <br>
+    
+                    <label for="compra" >Orden de compra1</label>
+                    <br>
+                    
+                    <input type="text" class="ordencompra1">
+                </div>
+                
+                <div class="section2">
+                    <p>Documentos XML o ZIP</p>
+                    
+                    <input type="text" class="documentoxml">
+                    {% if text %}             
+                    <span> sin archivos selecionados</span>
+                    
+                    {% endif %}
+                    <span> archivo subido </span>
+                </div>
+                <div class="section3">
+                    <label for="nofact">No.Factura</label>
+                    
         
+                    <input type="text" class="factura">
+                    <br>
+                    
+                    <label for="monto" >Monto:</label>
+                    <br>
+                    <input type="text"class="monto">
+                    <br>
+                    
+                    <label for="datefact">Fecha factura</label>
+                    <br>
+                    <input type="date" class="date">
+                </div>
+                
+               
+                <div class="section4">
+                   
+                    <input type="submit" class="btn-submit" value="Registrar pedido">
+    
+                    <button class="cancelar">Cancelar</button>
+                    
+                </div>
+            </fieldset>
+        </form>
+            
+           
+    </body>
        
 </body>
 </html>
