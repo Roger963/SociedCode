@@ -7,21 +7,17 @@
     <link rel="stylesheet" href="{% static 'css/employee.css' %}">
 </head>
 <body>
-    <div id="contenedor">
-        <div id="header">
+    <div class="container">
+        <div class="header">
             {% include "./components/navar.html" %}
         </div>
-        <div id="nav">
-            
+        <div class="content">
+            {% include "./components/orden_compra.html" %}
+
         </div>
-        <div id="contenido">
-            <div id="section">
-                {% include "./components/orden_compra.html" %}
-            </div>
-            
+                      
           
-        </div>
-        <div id="footer">SI</div>
+        <div class="footer">SI</div>
     </div>
     
 </body>

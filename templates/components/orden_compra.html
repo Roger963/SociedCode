@@ -10,59 +10,35 @@
 </head>
 <body>
  
+    <form action="" method="post">
+        <fieldset>
+            <legend>Ingrese Pedido</legend>
+            <div class="section1">
+                <label for="compra">Orden de compra1</label>
+                <input type="text">
+            </div>
+            <div class="section2">
+                <p>Documentos XML o ZIP</p>
+                <input type="text">
+                {% if text %}             
+                <span> sin archivos selecionados</span>
+                {% endif %}
+                <span> archivo subido </span>
+            </div>
+            <div class="section3">
+                <label for="nofact">No.Factura</label>
+                <input type="text">
+                <label for="monto">Monto:</label>
+                <input type="text">
+                <label for="datefact">Fecha factura</label>
+            </div>
+            <div class="section4">
+                <input type="submit">
+                <input type="submit">
+            </div>
+        </fieldset>
+    </form>
         
        
-    
-    <div class="info">
-    <div class="orden-compra">
-        <label for="" class="ordencompralabel">Orden de compra</label>
-        <input type="text" class="ordencompracaja">
-    </div>
-
-
-    <div class="select-file">
-        <div class="document">
-            <div class="titledocument">documentos XML O ZIP</div>
-            <div class="documentback">
-                <input type="buttondocument">
-                <div class="estadodocument">sjhkjsdjk</div>
-            </div>
-        </div>
-        <div class="document">
-            <div class="titledocument"></div>
-            <div class="documentback">
-                <input type="buttondocument">
-                <div class="estadodocument"></div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="factura">
-        <div class="numerofac">
-            <label for="">
-                <input type="text">
-            </label>
-        </div>
-
-        <div class="cantfac">
-            <label for="">
-                <input type="text">
-            </label>
-        </div>
-
-        <div class="datefac">
-            <label for="">
-                <input type="text">
-            </label>
-        </div>
-    </div>
-
-
-    <div class="confirmacion">
-        <div class="ingresarpedido"></div>
-        <div class="cancelar"></div>
-    </div>
-</div>
 </body>
 </html>
